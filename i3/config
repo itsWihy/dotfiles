@@ -43,7 +43,7 @@ exec --no-startup-id nitrogen --restore
 
 
 ######################
-# POLYBAR BOIIIIIIII #
+# POLYBAR  #
 ######################
 exec_always --no-startup-id ~/.config/polybar/launcher.sh
 
@@ -82,16 +82,13 @@ gaps outer 15
 ########################
 
 # Call Kitty (terminal)
-bindsym $mod+Return exec kitty
-
-# Call Alacritty (yes, another terminal, shut up)
-bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Return exec alacritty
 
 # Call Firefox
 bindsym $mod+w exec "/usr/bin/firefox"
 
 # Call Ranger
-bindsym $mod+t exec "kitty /usr/bin/ranger"
+bindsym $mod+t exec "alacritty /usr/bin/ranger"
 
 # Call Spotify
 bindsym $mod+m exec "/usr/bin/spotify"
@@ -143,12 +140,10 @@ bindsym $mod+v split v
 
 
 ###########################
-# SUPAH ROFI MEUWU BRUWU! #
+# ROFI                    #
 ###########################
 
-# DMENU REPLACEMENT BECAUSE DMENU SUCKS AND IS UGLY PLEASE DON'T KILL ME
-bindsym $mod+d exec "rofi -no-lazy-grab -show drun -modi run,drun,window -theme /$HOME/.config/rofi/minimal.rasi"
-
+bindsym $mod+d exec "rofi -no-lazy-grab -show drun -modi run,drun,window -theme /$HOME/.config/rofi/launchers/type-2/launcher.sh"
 
 #######################################
 # ENABLE AND SET BORDERS BIIIIIISH!!! #
@@ -162,7 +157,6 @@ for_window [title="^.*"] border pixel 0
 # I HATE TO SHOW TITLES IN WINDOWS THEY KILL EYE CANDY I NEED CANDY AAAAAAAA!!! #
 #################################################################################
 new_window 1pixel
-
 
 ###################################
 # SCREEN BACKLIGHT POUWAAAAAAAAAA #
@@ -259,7 +253,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 ###########################
-# LOG I3 ROFI MENU THINGY #
+# LOG I3 ROFI MENU THING  #
 ###########################
 bindsym $mod+Shift+q exec ~/.config/rofi/menus/shutdown/powermenu.sh
 
@@ -288,7 +282,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # FONT #
 ########
 font pango:Rubik Medium 12
-
 
 ############################
 # SAY NO FOR THICC BORDERS #
