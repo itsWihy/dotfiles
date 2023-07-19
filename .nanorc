@@ -31,13 +31,6 @@ set preserve
 # beginning of the line.
 set smarthome
 
-# Enable smooth scrolling. Text will scroll line-by-line, instead of
-# the usual chunk-by-chunk behavior.
-set smooth
-
-# Allow nano to be suspended with `^Z`.
-set suspend
-
 # Use this tab size (greater than 0) instead of the default (8).
 set tabsize 4
 
@@ -61,7 +54,3 @@ set selectedcolor brightwhite,magenta
 set statuscolor cyan
 set stripecolor ,yellow
 set titlecolor brightwhite,blue
-
-# Load Improved Nano syntax highlighting files.
-# See https://github.com/scopatz/nanorc
-include ~/.nano/*.nanorc
