@@ -36,10 +36,7 @@ exec --no-startup-id setxkbmap -layout us -variant altgr-intl
 #####################################
 # BACKGROUND, NO MORE FEH HA HA HA! #
 #####################################
-exec --no-startup-id nitrogen --restore
-
-# In case you hate nitrogen cuz ur a suckless fanboy
-# exec_always --no-startup-id xwallpaper --output eDP1 --stretch ~/Pictures/Wallpapers/nord.jpg
+exec_always --no-startup-id xwallpaper --output eDP1 --stretch ~/Pictures/Wallpapers/nord.jpg
 
 
 ######################
