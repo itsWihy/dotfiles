@@ -6,18 +6,6 @@
 #                                                                                                  #
 #|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|#
 
-# See https://i3wm.org/docs/userguide.html for a complete reference Baka!
-
-# IN CASE YOU BLOW UP THE CONFIG FOR SOME REASON
-# https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/config
-
-# OH DANG IT I NEED A BACKUP!!! DON'T WORRY YOU LIL WEEB USE THIS
-# 
-# wget --backups=1 https://raw.githubusercontent.com/endeavouros-team/i3-EndeavourOS/master/.config/i3/config -P ~/.config/i3/
- 
-# GET THE LATEST CONFIG BOI
-#exec --no-startup-id git clone https://github.com/endeavouros-team/i3-EndeavourOS.git ~/.config/i3/original/
-
 ###########################
 # SUPER WINDOWS BUTTON!!! #
 ############################
@@ -51,12 +39,10 @@ for_window [class=".*"] split toggle
 bindsym $mod+shift+z split toggle kill 
 workspace_layout default
 
-
 #####################
 # EMOJI TIME HA HA! #
 #####################
 bindsym $mod+e exec bash ~/.config/i3/scripts/emoji.sh
-
 
 ########################
 # GAPS, PRAISE THE GAP #
@@ -64,15 +50,11 @@ bindsym $mod+e exec bash ~/.config/i3/scripts/emoji.sh
 gaps inner 15
 gaps outer 15
 
-##################
-# RESIZE DA GAPS #
-##################
-
 ########################
 # CALL IMPORTANT STUFF #
 ########################
 
-# Call Kitty (terminal)
+# Call Alacritty (terminal)
 bindsym $mod+Return exec alacritty
 
 # Call Firefox
@@ -134,7 +116,7 @@ bindsym $mod+v split v
 # ROFI                    #
 ###########################
 
-bindsym $mod+d exec "rofi -no-lazy-grab -show drun -modi run,drun,window -theme /$HOME/.config/rofi/launchers/type-2/launcher.sh"
+bindsym $mod+d exec "rofi -no-lazy-grab -show drun -modi run,drun,window"
 
 #######################################
 # ENABLE AND SET BORDERS BIIIIIISH!!! #
