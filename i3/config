@@ -2,9 +2,7 @@
 #                                                                                                  #
 # Nord i3-gaps config                                                                              #
 #                                                                                                  #
-# By FrenzyExists                                                                                  #
-#                                                                                                  #
-# HI, I NEED HELP, HE'S BAD AT RICING GOD NO STOP PLEASE STOP CHANGING ME, NO, NO, NOOOOOOOOOO     #
+# Originally By FrenzyExists, edited by Wihy                                                       #
 #                                                                                                  #
 #|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-|#
 
@@ -20,29 +18,25 @@
 # GET THE LATEST CONFIG BOI
 #exec --no-startup-id git clone https://github.com/endeavouros-team/i3-EndeavourOS.git ~/.config/i3/original/
 
-
 ###########################
 # SUPER WINDOWS BUTTON!!! #
 ############################
 set $mod Mod4
-
 
 #############################
 # CHANGE DA KEYBINDINGS PLZ #
 #############################
 exec --no-startup-id setxkbmap -layout us -variant altgr-intl
 
-
 #####################################
-# BACKGROUND, NO MORE FEH HA HA HA! #
+# BACKGROUND                        #
 #####################################
-exec_always --no-startup-id xwallpaper --output eDP1 --stretch ~/Pictures/Wallpapers/nord.jpg
-
+exec --no-startup-id nitrogen --restore
 
 ######################
 # POLYBAR  #
 ######################
-exec_always --no-startup-id ~/.config/polybar/launcher.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #####################
 # CONKY CONKY CONKY #
