@@ -19,7 +19,7 @@ exec --no-startup-id setxkbmap -layout us -variant altgr-intl
 #####################################
 # BACKGROUND                        #
 #####################################
-exec --no-startup-id nitrogen --restore
+exec --no-startup-id nitrogen --set-zoom-fill ~/Pictures/Wallpapers/nord.jpg 
 
 ######################
 # POLYBAR  #
