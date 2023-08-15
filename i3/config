@@ -134,21 +134,13 @@ new_window 1pixel
 ###################################
 # SCREEN BACKLIGHT POUWAAAAAAAAAA #
 ###################################
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
-
-
-############################
-# STOP FOLLOWING THE MOUSE #
-############################
-focus_follows_mouse no
-
+bindsym XF86MonBrightnessUp exec brightnessctl set +150
+bindsym XF86MonBrightnessDown exec brightnessctl set 150-
 
 ###############################
 # USE DA MOUSE TO MOVE WINDOW #
 ###############################
 floating_modifier $mod
-
 
 #############################
 # BIND PROGRAM TO WORKSPACE #
@@ -200,7 +192,7 @@ bindsym $mod+q kill
 
 
 ############################
-# VOLUME POUWAAAAAAAAAA!!! #
+# VOLUME                   #
 ############################
   
 # volume
