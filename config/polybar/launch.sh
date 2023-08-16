@@ -14,8 +14,4 @@ launch_bar() {
 	polybar -q top -c "$dir/config.ini" &
 }
 
-if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m launch_bar &
-  done
-fi
+launch_bar
