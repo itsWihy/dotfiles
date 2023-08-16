@@ -20,7 +20,7 @@ exec_always --no-startup-id mpd &
 exec_always --no-startup-id dunst &
 
 # set wallpaper with fed
-exec_always feh --no-fehbg --bg-scale $HOME/Pictures/wallpapers/background.png
+exec_always feh --no-fehbg --bg-scale $HOME/Pictures/wallpapers/nord.jpg
 
 # launch polybar
 exec_always --no-startup-id killall -q
@@ -41,7 +41,7 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # change focus
 bindsym $mod+j focus left
@@ -77,7 +77,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+q layout stacking
+bindsym $mod+shift+q layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -97,10 +97,6 @@ bindsym $mod+i exec lock
 # monitor settings
 bindsym $mod+n exec xrandr --auto --output eDP-1 --mode 1920x1080 --right-of HDMI-1 && i3-msg restart &
 bindsym $mod+m exec xrandr --auto --output HDMI-1 --off && i3-msg restart &
-
-# toggle polybar
-bindsym $mod+o exec $HOME/.config/polybar/launch.sh
-bindsym $mod+p exec killall -q polybar
 
 # move workspaces between monitors
 bindsym $mod+b move workspace to output right
@@ -140,11 +136,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 
 # turn off screen
 bindsym XF86ScreenSaver exec xset dpms force off
-
-# :)
-bindsym ctrl + F1 exec --no-startup-id alacritty
-bindsym ctrl + F5 exec --no-startup-id kitty
-bindsym ctrl + F2 exec --no-startup-id dmenu_run
 
 # toggle microphone 
 bindsym ctrl + F3 exec amixer set Capture nocap && dunstify -a "Microphone" "Microphone" "Microphone is muted" -r 100 -i /usr/local/bin/icons/mic-off.svg
